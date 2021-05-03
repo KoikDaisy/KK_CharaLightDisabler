@@ -1,0 +1,1 @@
+Ever find it annoying when you play Koikatsu in VR and the camera light keeps making the shadows jitter in the background? Well, with KK_CamLockLightVR you can lock the camera light in one place and never have to worry again!
