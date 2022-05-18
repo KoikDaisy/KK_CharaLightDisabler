@@ -47,7 +47,7 @@ namespace KK_CharaLightDisabler
             private static void StudioDisableCharaLight(Studio.Map __instance)
             {
                 int mapID = __instance.no;
-                __instance.StartCoroutine(Controller.WaitForStudioLoaded(__instance, mapID));
+                __instance.StartCoroutine(Controller.WaitForNull(Controller.WaitForStudioLoaded(__instance, mapID), __instance));
             }
 
             //HSCENE MAIN GAME HOOK
@@ -71,6 +71,7 @@ namespace KK_CharaLightDisabler
                     __instance.StartCoroutine(Controller.WaitForNull(Controller.WaitForVRLoaded(), __instance));
                 }
             }
+            
 
         }
         private static class Controller
@@ -93,10 +94,10 @@ namespace KK_CharaLightDisabler
             {
                 yield return new WaitUntil(() => { return
                     //execute when loading into new studio map, OR
-                    (__instance.no != mapID && (GameObject.Find("AssetBundleManager").GetComponent<Manager.Scene>().baseScene != null) ||
+                    ((GameObject.Find("AssetBundleManager").GetComponent<Manager.Scene>().baseScene != null) ||
                     //execute when unloading to none.
                     (GameObject.Find("AssetBundleManager").GetComponent<Manager.Scene>().baseScene == null && (GameObject.Find("AssetBundleManager").GetComponent<Manager.Scene>().AddSceneName.Length == 0))); });
-                Logger.Log(LogLevel.Debug, PluginName + ": Loaded studio scene, disable chara light: " + (GameObject.Find(PluginName) != null));
+                Logger.Log(LogLevel.Debug, PluginName + ": Loaded studio map, disable chara light: " + (GameObject.Find(PluginName) != null));
                 SetCharaLightEnabled((GameObject.Find(PluginName) == null), studioLightName);
             }
 
