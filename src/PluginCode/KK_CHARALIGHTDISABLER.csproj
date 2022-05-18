@@ -7,8 +7,8 @@
     <ProjectGuid>{799E8918-D6E9-47AF-9218-466D328960FC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KK_CamLockLightVR</RootNamespace>
-    <AssemblyName>KK_CamLockLightVR</AssemblyName>
+    <RootNamespace>KK_CharaLightDisabler</RootNamespace>
+    <AssemblyName>KK_CharaLightDisabler</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -53,6 +53,9 @@
       <HintPath>..\packages\IllusionModdingAPI.KKAPI.1.18.0\lib\net35\KKAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="KK_JetPack">
+      <HintPath>..\..\..\..\..\koikatu\BepInEx\plugins\KK_JetPack.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,7 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KK_CamLockLightVR.cs" />
+    <Compile Include="KK_CharaLightDisabler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

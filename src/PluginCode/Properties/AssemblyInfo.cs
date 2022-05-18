@@ -1,12 +1,12 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
-using KK_CamLockLightVR;
+using KK_CharaLightDisabler;
 
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]
 
-[assembly: AssemblyTitle(KK_CamLockLightVR.KK_CamLockLightVR.PluginName)]
-[assembly: AssemblyProduct(KK_CamLockLightVR.KK_CamLockLightVR.PluginName)]
+[assembly: AssemblyTitle(KK_CharaLightDisabler.KK_CharaLightDisabler.PluginName)]
+[assembly: AssemblyProduct(KK_CharaLightDisabler.KK_CharaLightDisabler.PluginName)]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 
 [assembly: AssemblyTrademark("")]
@@ -16,4 +16,4 @@ using KK_CamLockLightVR;
 [assembly: ComVisible(false)]
 [assembly: Guid("799e8918-d6e9-47af-9218-466d328960fc")]
 
-[assembly: AssemblyVersion(KK_CamLockLightVR.KK_CamLockLightVR.Version)]
+[assembly: AssemblyVersion(KK_CharaLightDisabler.KK_CharaLightDisabler.Version)]
